@@ -1,0 +1,9 @@
+{
+    "env": {
+        "compiler": "bit.envs/compilers/babel@0.0.7"
+    },
+    "dependencies": {},
+    "packageDependencies": {
+        "fs-extra": "^4.0.1"
+    }
+}

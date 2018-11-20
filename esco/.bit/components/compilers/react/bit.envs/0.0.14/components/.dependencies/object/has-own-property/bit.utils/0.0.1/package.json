@@ -1,0 +1,10 @@
+{
+  "name": "@bit/bit.utils.object.has-own-property",
+  "version": "0.0.1",
+  "homepage": "https://bitsrc.io/bit/utils/object/has-own-property",
+  "main": "dist/src/object/hasOwnProperty.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE"
+}
