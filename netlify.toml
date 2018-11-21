@@ -1,5 +1,5 @@
 [build]
 
 base = "packages/esco"
-publish = "packages/esco/build-storybook"
+publish = "packages/esco/storybook-static"
 command = "npm run build-storybook"
