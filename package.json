@@ -1,5 +1,15 @@
 {
+  "name": "codedebug-esco",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:devrchancay/codedebug-esco.git",
+  "author": "Ramon Chancay <ramon.chancay@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "esco:storybook": "lerna run storybook --scope=esco",
+    "esco:build-storybook": "lerna run build-storybook --scope=esco"
+  },
   "devDependencies": {
-    "node-sass": "^4.10.0"
+    "lerna": "^3.4.3"
   }
 }
