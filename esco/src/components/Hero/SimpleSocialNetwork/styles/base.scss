@@ -1,0 +1,19 @@
+@import "variables.scss";
+
+.esco_SimpleSocialNetwork {
+  background-color: $primary-background;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.esco_SimpleSocialNetwork__container {
+  width: 90%;
+}
+
+.esco_SimpleSocialNetwork__title,
+.esco_SimpleSocialNetwork__subtitle {
+  text-align: center;
+  margin: 0;
+}

@@ -1,0 +1,1 @@
+## SimpleSocialNetwork component
