@@ -1,0 +1,5 @@
+[build]
+
+base = "packages/esco"
+publish = "packages/esco/build-storybook"
+command = "npm run esco:build-storybook"
