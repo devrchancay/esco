@@ -10,7 +10,8 @@ stories.add("Simple Social network", () => {
   const title = text("title", "Hello this Title");
   const subTitle = text("subTitle", "Hello this subTitle");
   const socialNetworks = object("socialNetworks", [
-    { name: "facebook", url: "https://facebook.com" }
+    { name: "Facebook", url: "https://facebook.com" },
+    { name: "Twitter", url: "https://twitter.com" }
   ]);
 
   return (

@@ -28,6 +28,6 @@ describe("SimpleSocialNetwork", function() {
     const firstItem = wrapper.find("ul li:first-child a");
     expect(wrapper.find("ul")).toHaveLength(1);
     expect(wrapper.find("ul li").length).toEqual(socialNetworks.length);
-    expect(firstItem.text()).toEqual(socialNetworks[0].name);
+    expect(firstItem.text()).toEqual(socialNetworks[0].name[0]);
   });
 });

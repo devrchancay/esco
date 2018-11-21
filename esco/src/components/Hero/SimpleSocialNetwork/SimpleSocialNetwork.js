@@ -7,9 +7,9 @@ import PropTypes from "prop-types";
  * @description Simple Header Hero with social networks
  * @example
  * <SimpleSocialNetwork
- *   title="Business Or Portfolio Title"
- *   subTitle="Business Or Porfolio slogan"
- *   socialNetworks={[{ name: 'Facebook', url:'https://facebook.com'}]}
+ *   title="Business title or portfolio"
+ *   subTitle="Business slogan or portfolio"
+ *   socialNetworks={[{"name": "Facebook","url": "https://facebook.com"},{"name": "Twitter","url": "https://twitter.com"}]}
  * />
  *
  */
@@ -26,10 +26,11 @@ const SimpleSocialNetwork = ({ title, subTitle, socialNetworks }) => (
           {socialNetworks.map(social => (
             <li className="esco_SimpleSocialNetwork__item">
               <a
+                className="esco_SimpleSocialNetwork__link"
                 href={social.url}
                 target={social.target ? social.target : "_blank"}
               >
-                {social.name}
+                {social.name[0]}
               </a>
             </li>
           ))}

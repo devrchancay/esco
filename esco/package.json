@@ -15,11 +15,14 @@
     "@storybook/addon-links": "^4.0.7",
     "@storybook/addon-options": "^4.0.7",
     "@storybook/react": "^4.0.7",
+    "autoprefixer": "^9.3.1",
     "babel-loader": "^8.0.4",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "node-sass": "^4.10.0",
-    "storybook": "^1.0.0"
+    "postcss-cli": "^6.0.1",
+    "storybook": "^1.0.0",
+    "tailwindcss": "^0.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,7 +31,9 @@
     "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "styles:global": "postcss src/styles/global.css -o src/components/global.css",
+    "styles:watch": "postcss src/components/Hero/SimpleSocialNetwork/styles/index.postcss.css -o  src/components/Hero/SimpleSocialNetwork/styles/index.css -w"
   },
   "eslintConfig": {
     "extends": "react-app"
