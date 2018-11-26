@@ -1,3 +1,3 @@
 import "../../global.css";
-import "./styles/index.css";
+import "./index.css";
 export { default } from "./SimpleSocialNetwork";

@@ -1,0 +1,13 @@
+.esco_SocialNetworks__list {
+  @apply .list-reset;
+  @apply .flex;
+  @apply .p-2;
+}
+
+.esco_SocialNetworks__item {
+  @apply .mx-1;
+}
+
+.esco_SocialNetworks__link {
+  @apply .no-underline;
+}

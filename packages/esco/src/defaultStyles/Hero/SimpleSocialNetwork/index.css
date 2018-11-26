@@ -24,17 +24,3 @@
   @apply .my-1;
   @apply .text-grey-darkest;
 }
-
-.esco_SimpleSocialNetwork__list {
-  @apply .list-reset;
-  @apply .flex;
-  @apply .p-2;
-}
-
-.esco_SimpleSocialNetwork__item {
-  @apply .mx-1;
-}
-
-.esco_SimpleSocialNetwork__link {
-  @apply .no-underline;
-}

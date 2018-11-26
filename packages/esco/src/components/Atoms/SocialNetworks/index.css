@@ -1,0 +1,15 @@
+.esco_SocialNetworks__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  padding: .5rem;
+}
+
+.esco_SocialNetworks__item {
+  margin-left: .25rem;
+  margin-right: .25rem;
+}
+
+.esco_SocialNetworks__link {
+  text-decoration: none;
+}

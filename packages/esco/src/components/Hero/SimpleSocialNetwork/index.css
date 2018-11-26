@@ -21,26 +21,9 @@
 
 .esco_SimpleSocialNetwork__title,
 .esco_SimpleSocialNetwork__subtitle {
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   text-align: center;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
   color: #3d4852;
-}
-
-.esco_SimpleSocialNetwork__list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  padding: 0.5rem;
-}
-
-.esco_SimpleSocialNetwork__item {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
-.esco_SimpleSocialNetwork__link {
-  text-decoration: none;
 }

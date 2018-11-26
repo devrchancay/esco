@@ -1,18 +1,25 @@
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
-const rename = require("gulp-rename");
+
+const paths = {
+  globalFile: "./src/styles/global.css",
+  defaultStyles: "./src/defaultStyles/**/**/**.css"
+};
 
 gulp.task("global:styles", function() {
   return gulp
-    .src("./src/styles/global.css")
+    .src(paths.globalFile)
     .pipe(postcss())
     .pipe(gulp.dest("./src/components/"));
 });
 
 gulp.task("styles", function() {
   return gulp
-    .src("./src/components/**/**/styles/index.**.css")
+    .src(paths.defaultStyles)
     .pipe(postcss())
-    .pipe(rename("index.css"))
     .pipe(gulp.dest("./src/components"));
+});
+
+gulp.task("styles:watch", function() {
+  gulp.watch(paths.defaultStyles, ["styles"]);
 });

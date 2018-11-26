@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import SocialNetworks from "../../Atoms/SocialNetworks/";
 
 /**
  * @render react
@@ -22,19 +23,7 @@ const SimpleSocialNetwork = ({ title, subTitle, socialNetworks }) => (
         <h2 className="esco_SimpleSocialNetwork__subtitle">{subTitle}</h2>
       </div>
       <div className="esco_SimpleSocialNetwork__row">
-        <ul className="esco_SimpleSocialNetwork__list">
-          {socialNetworks.map(social => (
-            <li className="esco_SimpleSocialNetwork__item">
-              <a
-                className="esco_SimpleSocialNetwork__link"
-                href={social.url}
-                target={social.target ? social.target : "_blank"}
-              >
-                {social.name[0]}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <SocialNetworks socialNetworks={socialNetworks} />
       </div>
     </div>
   </div>
