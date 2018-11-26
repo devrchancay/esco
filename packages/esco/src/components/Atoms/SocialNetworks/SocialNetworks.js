@@ -15,8 +15,8 @@ import PropTypes from "prop-types";
 const SocialNetworks = ({ socialNetworks }) => (
   <div className="esco_SocialNetworks">
     <ul className="esco_SocialNetworks__list">
-      {socialNetworks.map(social => (
-        <li className="esco_SocialNetworks__item">
+      {socialNetworks.map((social, key) => (
+        <li className="esco_SocialNetworks__item" key={key}>
           <a
             className="esco_SocialNetworks__link"
             href={social.url}
