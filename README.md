@@ -22,7 +22,7 @@ $> lerna esco:storybook
 ## DEPLOY
 
 ```
-$> lerna esco:build-storybool 
+$> lerna esco:build-storybook
 
 ```
 
