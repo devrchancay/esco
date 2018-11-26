@@ -1,5 +1,6 @@
 .esco_SimpleSocialNetwork {
-  @apply .bg-grey-light;
+  @apply .text-grey-darkest;
+  @apply .bg-grey-lighter;
 }
 
 .esco_SimpleSocialNetwork__container {
@@ -21,6 +22,7 @@
   @apply .font-sans;
   @apply .text-center;
   @apply .my-1;
+  @apply .text-grey-darkest;
 }
 
 .esco_SimpleSocialNetwork__list {
