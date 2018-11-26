@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * @render react
@@ -20,7 +20,7 @@ const SocialNetworks = ({ socialNetworks }) => (
           <a
             className="esco_SocialNetworks__link"
             href={social.url}
-            target={social.target ? social.target : "_blank"}
+            target={social.target ? social.target : '_blank'}
           >
             {social.name[0]}
           </a>
@@ -31,7 +31,7 @@ const SocialNetworks = ({ socialNetworks }) => (
 );
 
 SocialNetworks.propTypes = {
-  socialNetworks: PropTypes.array.isRequired
+  socialNetworks: PropTypes.array.isRequired,
 };
 
 export default SocialNetworks;
