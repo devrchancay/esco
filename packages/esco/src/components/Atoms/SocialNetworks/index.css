@@ -3,11 +3,26 @@
   padding: 0;
   display: flex;
   padding: .5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.esco_SocialNetworks__list--vertical {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  padding: .5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  flex-direction: column;
 }
 
 .esco_SocialNetworks__item {
-  margin-left: .25rem;
-  margin-right: .25rem;
+  width: 3rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .esco_SocialNetworks__link {

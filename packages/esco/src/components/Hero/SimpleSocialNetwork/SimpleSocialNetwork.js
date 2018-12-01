@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import SocialNetworks from "../../Atoms/SocialNetworks/";
+import React from 'react';
+import PropTypes from 'prop-types';
+import SocialNetworks from '../../Atoms/SocialNetworks/';
 
 /**
  * @render react
@@ -32,7 +32,7 @@ const SimpleSocialNetwork = ({ title, subTitle, socialNetworks }) => (
 SimpleSocialNetwork.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
-  socialNetworks: PropTypes.array.isRequired
+  socialNetworks: PropTypes.array.isRequired,
 };
 
 export default SimpleSocialNetwork;

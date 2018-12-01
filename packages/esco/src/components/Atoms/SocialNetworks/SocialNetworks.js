@@ -1,28 +1,39 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Icon from '../Icon';
+
 /**
  * @render react
  * @name SocialNetworks
  * @description Widget menu for social networks
  * @example
  * <SocialNetworks
- *   socialNetworks={[{"name": "Facebook","url": "https://facebook.com"},{"name": "Twitter","url": "https://twitter.com"}]}
+ *  socialNetworks={[
+    { icon: { name: 'facebook' }, link: { url: 'https://facebook.com' } },
+    { icon: { name: 'twitter' }, link: { url: 'https://twitter.com' } },
+    { icon: { name: 'linkedin' }, link: { url: 'https://linkedin.com' } },
+    { icon: { name: 'github' }, link: { url: 'https://github.com' } },
+  ]}
  * />
  *
  */
 
-const SocialNetworks = ({ socialNetworks }) => (
+const SocialNetworks = ({ socialNetworks, orientation }) => (
   <div className="esco_SocialNetworks">
-    <ul className="esco_SocialNetworks__list">
+    <ul
+      className={`esco_SocialNetworks__list${
+        orientation === 'vertical' ? '--vertical' : ''
+      }`}
+    >
       {socialNetworks.map((social, key) => (
         <li className="esco_SocialNetworks__item" key={key}>
           <a
             className="esco_SocialNetworks__link"
-            href={social.url}
-            target={social.target ? social.target : '_blank'}
+            href={social.link.url}
+            target={social.link.target ? social.link.target : '_blank'}
           >
-            {social.name[0]}
+            <Icon icon={social.icon} />
           </a>
         </li>
       ))}
@@ -32,6 +43,11 @@ const SocialNetworks = ({ socialNetworks }) => (
 
 SocialNetworks.propTypes = {
   socialNetworks: PropTypes.array.isRequired,
+  orientation: PropTypes.string.isRequired,
+};
+
+SocialNetworks.defaultProps = {
+  orientation: 'horizontal',
 };
 
 export default SocialNetworks;
