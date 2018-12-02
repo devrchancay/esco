@@ -10,10 +10,10 @@ import Icon from '../../Atoms/Icon';
  * @example
  * <SocialNetworks
  *  socialNetworks={[
-    { icon: { name: 'facebook' }, link: { url: 'https://facebook.com' } },
-    { icon: { name: 'twitter' }, link: { url: 'https://twitter.com' } },
-    { icon: { name: 'linkedin' }, link: { url: 'https://linkedin.com' } },
-    { icon: { name: 'github' }, link: { url: 'https://github.com' } },
+ *   { icon: { name: 'facebook' }, link: { url: 'https://facebook.com' } },
+ *   { icon: { name: 'twitter' }, link: { url: 'https://twitter.com' } },
+ *   { icon: { name: 'linkedin' }, link: { url: 'https://linkedin.com' } },
+ *   { icon: { name: 'github' }, link: { url: 'https://github.com' } },
   ]}
  * />
  *

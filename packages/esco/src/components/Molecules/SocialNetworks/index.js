@@ -1,2 +1,2 @@
-import './index.css';
+import './styles.css';
 export { default } from './SocialNetworks';

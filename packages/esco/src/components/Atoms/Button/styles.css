@@ -1,0 +1,31 @@
+.simpleBtn {
+  font-weight: 700;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  outline: 0;
+}
+
+.simpleBtn:hover {
+  cursor: pointer;
+}
+
+.simpleBtn--primary {
+  color: #fff;
+  background-color: #606f7b;
+}
+
+.simpleBtn--button {
+  border-radius: .25rem;
+}
+
+.simpleBtn--link,
+.simpleBtn--link:hover,
+.simpleBtn--link:active,
+.simpleBtn--link:focus {
+  border-style: none;
+  color: #606f7b;
+  background-color: transparent;
+  text-decoration: underline;
+}

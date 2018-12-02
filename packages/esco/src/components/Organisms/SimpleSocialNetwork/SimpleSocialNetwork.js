@@ -8,9 +8,14 @@ import SocialNetworks from '../../Molecules/SocialNetworks';
  * @description Simple Header Hero with social networks
  * @example
  * <SimpleSocialNetwork
- *   title="Business title or portfolio"
- *   subTitle="Business slogan or portfolio"
- *   socialNetworks={[{"name": "Facebook","url": "https://facebook.com"},{"name": "Twitter","url": "https://twitter.com"}]}
+ *  title="Business title or portfolio"
+ *  subTitle="Business slogan or portfolio"
+ *  socialNetworks={[
+ *   { icon: { name: 'facebook' }, link: { url: 'https://facebook.com' } },
+ *   { icon: { name: 'twitter' }, link: { url: 'https://twitter.com' } },
+ *   { icon: { name: 'linkedin' }, link: { url: 'https://linkedin.com' } },
+ *   { icon: { name: 'github' }, link: { url: 'https://github.com' } },
+ * ]}
  * />
  *
  */

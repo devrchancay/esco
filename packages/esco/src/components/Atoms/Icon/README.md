@@ -7,11 +7,11 @@ example
 Facebook Icon
 
 ```jsx
-<Icon icon={name: "Twitter", alt="follow me"}/>
+<Icon icon={{ name: 'facebook', alt: 'follow me' }} />
 ```
 
 Custom Icon
 
 ```jsx
-<Icon icon={src: "https://codedebug.co/static/logo-credits.a68e7e7f.pngTwitter", alt="follow me"}/>
+<Icon icon={{src: "https://codedebug.co/static/logo-credits.a68e7e7f.pngTwitter", alt="follow me"}}/>
 ```

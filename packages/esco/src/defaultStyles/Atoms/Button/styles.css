@@ -1,0 +1,29 @@
+.simpleBtn {
+  @apply .font-bold;
+  @apply .py-2;
+  @apply .px-4;
+  @apply .outline-none;
+}
+
+.simpleBtn:hover {
+  @apply .cursor-pointer;
+}
+
+.simpleBtn--primary {
+  @apply .text-white;
+  @apply .bg-grey-darker;
+}
+
+.simpleBtn--button {
+  @apply .rounded;
+}
+
+.simpleBtn--link,
+.simpleBtn--link:hover,
+.simpleBtn--link:active,
+.simpleBtn--link:focus {
+  @apply .border-none;
+  @apply .text-grey-darker;
+  @apply .bg-transparent;
+  @apply .underline;
+}

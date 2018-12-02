@@ -4,7 +4,7 @@ import { object } from '@storybook/addon-knobs';
 
 import SocialNetworks from '../../components/Molecules/SocialNetworks';
 
-const stories = storiesOf('Molecules', module);
+const stories = storiesOf('Molecules/SocialNetworks', module);
 
 const socialNetworks = object('socialNetworks', [
   { icon: { name: 'facebook' }, link: { url: 'https://facebook.com' } },
@@ -15,10 +15,10 @@ const socialNetworks = object('socialNetworks', [
 ]);
 
 stories
-  .add('Social Networks', () => {
+  .add('horizontal Menu', () => {
     return <SocialNetworks socialNetworks={socialNetworks} />;
   })
-  .add('Orientation vertical', () => {
+  .add('Vertical Menu', () => {
     return (
       <SocialNetworks socialNetworks={socialNetworks} orientation="vertical" />
     );
