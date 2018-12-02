@@ -2,9 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, object } from '@storybook/addon-knobs';
 
-import SimpleSocialNetwork from '../../components/Hero/SimpleSocialNetwork';
+import SimpleSocialNetwork from '../../components/Organisms/SimpleSocialNetwork';
 
-const stories = storiesOf('Headers|1. Simple Social Network', module);
+const stories = storiesOf('Organisms|1. Simple Social Network', module);
 
 stories.add('Simple Social network', () => {
   const title = text('title', 'Hello this Title');

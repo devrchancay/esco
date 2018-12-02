@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SocialNetworks from '../../Atoms/SocialNetworks/';
+import SocialNetworks from '../../Molecules/SocialNetworks';
 
 /**
  * @render react
