@@ -4,7 +4,7 @@ import { object } from '@storybook/addon-knobs';
 
 import SocialNetworks from '../../components/Molecules/SocialNetworks';
 
-const stories = storiesOf('Molecules|1. Social Networks', module);
+const stories = storiesOf('Molecules', module);
 
 const socialNetworks = object('socialNetworks', [
   { icon: { name: 'facebook' }, link: { url: 'https://facebook.com' } },

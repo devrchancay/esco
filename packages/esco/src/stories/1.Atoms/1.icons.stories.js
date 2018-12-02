@@ -4,7 +4,7 @@ import { select, text, object } from '@storybook/addon-knobs';
 import { iconKeys } from '../../components/Atoms/Icon/defaultIcons';
 import Icon from '../../components/Atoms/Icon';
 
-const stories = storiesOf('Atoms|1. Icons', module);
+const stories = storiesOf('Atoms', module);
 const storybookStyles = {
   width: '50px',
   padding: '0.5rem',

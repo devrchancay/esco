@@ -4,7 +4,7 @@ import { text, object } from '@storybook/addon-knobs';
 
 import SimpleSocialNetwork from '../../components/Organisms/SimpleSocialNetwork';
 
-const stories = storiesOf('Organisms|1. Simple Social Network', module);
+const stories = storiesOf('Organisms', module);
 
 stories.add('Simple Social network', () => {
   const title = text('title', 'Hello this Title');
