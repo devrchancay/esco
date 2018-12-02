@@ -20,7 +20,7 @@ import Icon from '../../Atoms/Icon';
  */
 
 const SocialNetworks = ({ socialNetworks, orientation }) => (
-  <div className="esco_SocialNetworks">
+  <div esco-type="molecule" className="esco_SocialNetworks">
     <ul
       className={`esco_SocialNetworks__list${
         orientation === 'vertical' ? '--vertical' : ''

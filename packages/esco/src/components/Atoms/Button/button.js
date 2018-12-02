@@ -15,6 +15,7 @@ import PropTypes from 'prop-types';
 
 const Button = ({ label, actionClick, color, type }) => (
   <button
+    esco-type="atom"
     className={`simpleBtn simpleBtn--${color} simpleBtn--${type}`}
     onClick={actionClick}
   >

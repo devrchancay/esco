@@ -21,7 +21,7 @@ import SocialNetworks from '../../Molecules/SocialNetworks';
  */
 
 const SimpleSocialNetwork = ({ title, subTitle, socialNetworks }) => (
-  <div className="esco_SimpleSocialNetwork">
+  <div esco-type="organism" className="esco_SimpleSocialNetwork">
     <div className="esco_SimpleSocialNetwork__container">
       <div className="esco_SimpleSocialNetwork__row">
         <h1 className="esco_SimpleSocialNetwork__title">{title}</h1>
