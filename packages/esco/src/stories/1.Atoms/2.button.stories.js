@@ -10,16 +10,23 @@ const storybookStyles = {
   padding: '0.5rem',
 };
 
+const label = text('label', 'Click me');
+
 const stories = storiesOf('Atoms/Buttons', module);
 
 stories.add('Default Button', () => {
-  const label = text('label', 'Click me');
 
   return (
     <div style={storybookStyles}>
       <Button label={label} actionClick={action('button-click')} />
     </div>
   );
-});
+}).add('Button Link', () => {
+  return (
+    <div style={storybookStyles}>
+      <Button type="link" label={label} actionClick={action('button-click')} />
+    </div>
+  )
+})
 
 export default stories;

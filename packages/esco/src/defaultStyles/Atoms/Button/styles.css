@@ -18,12 +18,13 @@
   @apply .rounded;
 }
 
-.simpleBtn--link,
-.simpleBtn--link:hover,
-.simpleBtn--link:active,
-.simpleBtn--link:focus {
+.simpleBtn--link{
   @apply .border-none;
   @apply .text-grey-darker;
   @apply .bg-transparent;
+}
+.simpleBtn--link:hover,
+.simpleBtn--link:active,
+.simpleBtn--link:focus {
   @apply .underline;
 }
