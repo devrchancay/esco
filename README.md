@@ -1,8 +1,8 @@
-# codedebug-esco
+# ESCO
 
 Reusable React components.
 
-> e.s.c.o (Elian Santiago Chancay Olivo / Emily Samara Chancay Olivo ) my children
+> e.s.c.o (Elian Santiago Chancay Olivo / Emily Samara Chancay Olivo ) my children 👶👧
 
 ## MISION
 
