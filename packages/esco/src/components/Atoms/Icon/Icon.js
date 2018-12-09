@@ -13,11 +13,27 @@ import { getIcon } from './defaultIcons';
 
 const Icon = ({ icon }) => {
   if (icon.src && !icon.name) {
-    return <img esco-type="atom" src={icon.src} alt={icon.alt} />;
+    return (
+      <img
+        aria-label={icon.label}
+        esco-type="atom"
+        src={icon.src}
+        alt={icon.alt}
+        title={icon.label}
+      />
+    );
   }
   const ic = getIcon(icon.name);
 
-  return <img esco-type="atom" src={ic.src} alt={icon.alt} />;
+  return (
+    <img
+      aria-label={icon.label}
+      title={icon.label}
+      esco-type="atom"
+      src={ic.src}
+      alt={icon.alt}
+    />
+  );
 };
 
 Icon.propTypes = {

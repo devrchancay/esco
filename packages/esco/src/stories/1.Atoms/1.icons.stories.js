@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { select, text, object } from '@storybook/addon-knobs';
+
 import { iconKeys } from '../../components/Atoms/Icon/defaultIcons';
 import Icon from '../../components/Atoms/Icon';
 
@@ -11,6 +12,7 @@ const storybookStyles = {
 };
 
 stories
+
   .add('Default Social Networks Icons', () => {
     const name = select('name', iconKeys, 'twitter');
     const icon = object('icon', {

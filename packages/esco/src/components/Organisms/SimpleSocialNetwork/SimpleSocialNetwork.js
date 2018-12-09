@@ -11,10 +11,10 @@ import SocialNetworks from '../../Molecules/SocialNetworks';
  *  title="Business title or portfolio"
  *  subTitle="Business slogan or portfolio"
  *  socialNetworks={[
- *   { icon: { name: 'facebook' }, link: { url: 'https://facebook.com' } },
- *   { icon: { name: 'twitter' }, link: { url: 'https://twitter.com' } },
- *   { icon: { name: 'linkedin' }, link: { url: 'https://linkedin.com' } },
- *   { icon: { name: 'github' }, link: { url: 'https://github.com' } },
+ *   { icon: { name: 'facebook', label: 'Facebook' }, link: { url: 'https://facebook.com',label: 'Facebook' } },
+ *   { icon: { name: 'twitter', label: 'Twitter' }, link: { url: 'https://twitter.com',label: 'Twitter' } },
+ *   { icon: { name: 'linkedin', label: 'Linkedin' }, link: { url: 'https://linkedin.com',label: 'Linkedin' } },
+ *   { icon: { name: 'github', label: 'Github' }, link: { url: 'https://github.com',label: 'Github' } },
  * ]}
  * />
  *
