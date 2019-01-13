@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { FelaComponent } from 'react-fela';
+import { Img } from './styles';
 import { getIcon } from './defaultIcons';
 
 /**
@@ -11,30 +12,23 @@ import { getIcon } from './defaultIcons';
     <div style={{ width: '100px' }} ><Icon icon={{ name: 'facebook', alt: 'follow me' }} /></div>
  */
 
-const Icon = ({ icon }) => {
-  if (icon.src && !icon.name) {
-    return (
-      <img
-        aria-label={icon.label}
-        esco-type="atom"
-        src={icon.src}
-        alt={icon.alt}
-        title={icon.label}
-      />
-    );
-  }
-  const ic = getIcon(icon.name);
+const Icon = ({ icon }) => (
+  <FelaComponent style={Img}>
+    {({ className }) => {
+      const src = icon.src && !icon.name ? icon.src : getIcon(icon.name).src;
 
-  return (
-    <img
-      aria-label={icon.label}
-      title={icon.label}
-      esco-type="atom"
-      src={ic.src}
-      alt={icon.alt}
-    />
-  );
-};
+      return (
+        <img
+          esco-type="atom"
+          aria-label={icon.alt}
+          src={src}
+          className={className}
+          alt={icon.alt}
+        />
+      );
+    }}
+  </FelaComponent>
+);
 
 Icon.propTypes = {
   icon: PropTypes.object.isRequired,

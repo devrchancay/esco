@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SocialNetworks from '../../Molecules/SocialNetworks';
+import { FelaComponent } from 'react-fela';
+import { Wrapper, Container, Row, Title } from './styles';
 
 /**
  * @render react
@@ -21,17 +23,21 @@ import SocialNetworks from '../../Molecules/SocialNetworks';
  */
 
 const SimpleSocialNetwork = ({ title, subTitle, socialNetworks }) => (
-  <div esco-type="organism" className="esco_SimpleSocialNetwork">
-    <div className="esco_SimpleSocialNetwork__container">
-      <div className="esco_SimpleSocialNetwork__row">
-        <h1 className="esco_SimpleSocialNetwork__title">{title}</h1>
-        <h2 className="esco_SimpleSocialNetwork__subtitle">{subTitle}</h2>
-      </div>
-      <div className="esco_SimpleSocialNetwork__row">
+  <FelaComponent esco-type="organism" style={Wrapper}>
+    <FelaComponent style={Container}>
+      <FelaComponent style={Row}>
+        <FelaComponent style={Title} as="h1">
+          {title}
+        </FelaComponent>
+        <FelaComponent style={Title} as="h2">
+          {subTitle}
+        </FelaComponent>
+      </FelaComponent>
+      <FelaComponent style={Row}>
         <SocialNetworks socialNetworks={socialNetworks} />
-      </div>
-    </div>
-  </div>
+      </FelaComponent>
+    </FelaComponent>
+  </FelaComponent>
 );
 
 SimpleSocialNetwork.propTypes = {
