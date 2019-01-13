@@ -1,6 +1,6 @@
 import React from 'react';
-import SocialNetworks from './SocialNetworks';
-import { shallow } from 'enzyme';
+import SocialNetworks from './index';
+import { render } from 'enzyme';
 
 const socialNetworks = [
   {
@@ -10,7 +10,7 @@ const socialNetworks = [
 ];
 
 describe('SocialNetworks', function() {
-  const wrapper = shallow(<SocialNetworks socialNetworks={socialNetworks} />);
+  const wrapper = render(<SocialNetworks socialNetworks={socialNetworks} />);
 
   it('It should have a defined structure', () => {
     expect(wrapper.find('ul')).toHaveLength(1);

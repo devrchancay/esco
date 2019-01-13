@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { FelaComponent } from 'react-fela';
 import Icon from '../../Atoms/Icon';
+import { ListContainer, List, ListItem, ListLink } from './styles';
 
 /**
  * @render react
@@ -20,31 +21,33 @@ import Icon from '../../Atoms/Icon';
  */
 
 const SocialNetworks = ({ socialNetworks, orientation }) => (
-  <div esco-type="molecule" className="esco_SocialNetworks">
-    <ul
-      className={`esco_SocialNetworks__list${
-        orientation === 'vertical' ? '--vertical' : ''
-      }`}
-    >
-      {socialNetworks.map((social, key) => (
-        <li className="esco_SocialNetworks__item" key={key}>
-          <a
-            aria-label={social.link.label}
-            className="esco_SocialNetworks__link"
-            href={social.link.url}
-            target={social.link.target ? social.link.target : '_blank'}
-          >
-            <Icon icon={social.icon} />
-          </a>
-        </li>
-      ))}
-    </ul>
-  </div>
+  <FelaComponent style={ListContainer}>
+    <FelaComponent style={List} orientation={orientation} as="ul">
+      {socialNetworks.length > 0 &&
+        socialNetworks.map((social, key) => (
+          <FelaComponent style={ListItem} key={key} as="li">
+            <FelaComponent style={ListLink}>
+              {({ className }) => (
+                <a
+                  aria-label={social.link.label}
+                  href={social.link.url}
+                  target={social.link.target ? social.link.target : '_blank'}
+                  className={className}
+                >
+                  <Icon icon={social.icon} />
+                </a>
+              )}
+            </FelaComponent>
+          </FelaComponent>
+        ))}
+    </FelaComponent>
+  </FelaComponent>
 );
 
 SocialNetworks.propTypes = {
   socialNetworks: PropTypes.array.isRequired,
   orientation: PropTypes.string.isRequired,
+  theme: PropTypes.object,
 };
 
 SocialNetworks.defaultProps = {

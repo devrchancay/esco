@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FelaComponent } from 'react-fela';
+import { simpleBtn } from './styles';
 
 /**
  * @render react
@@ -13,14 +15,14 @@ import PropTypes from 'prop-types';
  *
  */
 
-const Button = ({ label, actionClick, color, type }) => (
-  <button
-    esco-type="atom"
-    className={`simpleBtn simpleBtn--${color} simpleBtn--${type}`}
-    onClick={actionClick}
-  >
-    {label}
-  </button>
+const Button = ({ label, actionClick, type }) => (
+  <FelaComponent style={simpleBtn} type={type}>
+    {({ className }) => (
+      <button esco-type="atom" className={className} onClick={actionClick}>
+        {label}
+      </button>
+    )}
+  </FelaComponent>
 );
 
 Button.propTypes = {

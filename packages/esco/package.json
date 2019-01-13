@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "fela": "^10.1.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-fela": "^10.1.0",
     "react-scripts": "2.1.1"
   },
   "devDependencies": {
@@ -35,9 +37,7 @@
     "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "styles:global": "postcss src/styles/global.css -o src/components/global.css",
-    "styles:watch": "postcss src/components/Hero/SimpleSocialNetwork/styles/index.postcss.css -o  src/components/Hero/SimpleSocialNetwork/styles/index.css -w"
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
