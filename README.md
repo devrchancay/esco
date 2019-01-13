@@ -19,11 +19,4 @@ $> lerna bootstrap
 
 ```
 $> npm run esco:storybook
-$> cd packages/esco && gulp styles:watch
-```
-
-## DEPLOY
-
-```
-$> npm run esco:build-storybook
 ```
