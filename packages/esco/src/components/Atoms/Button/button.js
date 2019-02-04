@@ -8,10 +8,15 @@ import { simpleBtn } from './styles';
  * @name Button
  * @description Simple button with cta
  * @example
- * <Button
- *   label="click Me"
- *   actionClick={() => { console.log('Hello world') }}
- * />
+ * import React from 'react';
+ * import Button from '@bit/devrchancay.esco.atoms.button';
+ *
+ * export default (
+ *  <Button
+ *    label="click Me"
+ *    actionClick={() => { console.log('Hello world') }}
+ *  />
+ * )
  *
  */
 

@@ -5,27 +5,39 @@ Buttons
 example
 
 ```jsx
-{/* Default button */}
+{
+  /* Default button */
+}
 <Button
-    label="Click me"
-    handleClick={() => { console.log('Hello world') }}
-/>
+  label="Click me"
+  actionClick={() => {
+    console.log('Hello world');
+  }}
+/>;
 ```
 
 ```jsx
-{/* Button link */}
+{
+  /* Button link */
+}
 <Button
-    label="Click me"
-    handleClick={() => { console.log('Hello world') }}
-    type="link"
-/>
+  label="Click me"
+  actionClick={() => {
+    console.log('Hello world');
+  }}
+  type="link"
+/>;
 ```
 
 ```jsx
-{/* Button with theme */}
+{
+  /* Button with theme */
+}
 <Button
-    label="Click me"
-    handleClick={() => { console.log('Hello world') }}
-    color="secondary"
-/>
+  label="Click me"
+  actionClick={() => {
+    console.log('Hello world');
+  }}
+  color="secondary"
+/>;
 ```
