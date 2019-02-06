@@ -10,10 +10,33 @@
   "commit": false,
   "contributors": [
     {
+      "login": "devrchancay",
+      "name": "Ramón Chancay Ortega",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4138285?v=4",
+      "profile": "https://ramonchancay.me",
+      "contributions": [
+        "infra",
+        "doc",
+        "test",
+        "code"
+      ]
+    },
+    {
       "login": "andresfabianguerrero",
       "name": "Andrés Fabián Guerrero",
       "avatar_url": "https://avatars2.githubusercontent.com/u/10011379?v=4",
       "profile": "https://about.me/andres-guerrero",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    },
+    {
+      "login": "emamut",
+      "name": "Faber Andrés Vergara Holguín",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/134828?v=4",
+      "profile": "http://emamut.github.io",
       "contributions": [
         "infra",
         "test",
