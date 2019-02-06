@@ -1,0 +1,25 @@
+{
+  "projectName": "esco",
+  "projectOwner": "devrchancay",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "andresfabianguerrero",
+      "name": "Andrés Fabián Guerrero",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/10011379?v=4",
+      "profile": "https://about.me/andres-guerrero",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
