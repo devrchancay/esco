@@ -1,0 +1,25 @@
+{
+  "projectName": "esco",
+  "projectOwner": "devrchancay",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "emamut",
+      "name": "Faber Andrés Vergara Holguín",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/134828?v=4",
+      "profile": "http://emamut.github.io",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
