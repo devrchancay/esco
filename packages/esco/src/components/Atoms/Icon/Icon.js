@@ -19,11 +19,17 @@ import { getIcon } from './defaultIcons';
     );
  */
 
-const Icon = ({ icon }) => (
+const Icon = ({ icon, Component }) => (
   <FelaComponent style={Img}>
     {({ className }) => {
+      if (Component) {
+        return (
+          <div className={className}>
+            <Component />
+          </div>
+        );
+      }
       const src = icon.src && !icon.name ? icon.src : getIcon(icon.name).src;
-
       return (
         <img
           esco-type="atom"
@@ -39,6 +45,7 @@ const Icon = ({ icon }) => (
 
 Icon.propTypes = {
   icon: PropTypes.object.isRequired,
+  Component: PropTypes.func,
 };
 
 export default Icon;

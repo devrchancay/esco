@@ -4,6 +4,7 @@ import { select, text, object } from '@storybook/addon-knobs';
 
 import { iconKeys } from '../../components/Atoms/Icon/defaultIcons';
 import Icon from '../../components/Atoms/Icon';
+import CustomIcon from './CustomIcon';
 
 const stories = storiesOf('Atoms/Icons', module);
 const storybookStyles = {
@@ -27,11 +28,8 @@ stories
     );
   })
   .add('Custom src Icon', () => {
-    const src = text(
-      'src',
-      'https://codedebug.co/static/logo-credits.a68e7e7f.png',
-    );
-    const alt = text('alt', 'codedebug.co');
+    const src = text('src', 'https://cdn.svgporn.com/logos/react.svg');
+    const alt = text('alt', 'React');
 
     const icon = object('icon', {
       src,
@@ -41,6 +39,14 @@ stories
     return (
       <div style={storybookStyles}>
         <Icon icon={icon} />
+      </div>
+    );
+  })
+  .add('SVG Support', () => {
+    const icon = object('icon', {});
+    return (
+      <div style={storybookStyles}>
+        <Icon icon={icon} Component={CustomIcon} />
       </div>
     );
   });
