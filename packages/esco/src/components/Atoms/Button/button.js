@@ -50,4 +50,4 @@ Button.defaultProps = {
   children: null,
 };
 
-export default Button;
+export default React.memo(Button);

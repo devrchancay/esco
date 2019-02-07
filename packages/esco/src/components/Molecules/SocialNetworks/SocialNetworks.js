@@ -59,4 +59,4 @@ SocialNetworks.defaultProps = {
   orientation: 'horizontal',
 };
 
-export default SocialNetworks;
+export default React.memo(SocialNetworks);

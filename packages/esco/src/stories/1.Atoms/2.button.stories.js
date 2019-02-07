@@ -18,19 +18,20 @@ const events = {
   onMouseLeave: action('button-onMouseLeave'),
 };
 
+const defaultButton = object('styles', {
+  backgroundColor: '#606f7b',
+  border: 'solid 1px #606f7b',
+  color: 'white',
+  ':hover': {
+    backgroundColor: '#777f7b',
+    borderColor: '#777f7b',
+  },
+});
+
 const stories = storiesOf('Atoms/Buttons', module);
 
 stories
   .add('Default Button', () => {
-    const defaultButton = object('styles', {
-      backgroundColor: '#606f7b',
-      border: 'solid 1px #606f7b',
-      color: 'white',
-      ':hover': {
-        backgroundColor: '#777f7b',
-        borderColor: '#777f7b',
-      },
-    });
     return (
       <div style={storybookStyles}>
         <Button styles={defaultButton} events={events}>

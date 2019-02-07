@@ -48,4 +48,4 @@ Icon.propTypes = {
   Component: PropTypes.func,
 };
 
-export default Icon;
+export default React.memo(Icon);
