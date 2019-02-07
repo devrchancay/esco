@@ -8,36 +8,58 @@ example
 {
   /* Default button */
 }
-<Button
-  label="Click me"
-  actionClick={() => {
-    console.log('Hello world');
-  }}
-/>;
+import React from 'react';
+import Button from '@bit/devrchancay.esco.atoms.button';
+const styles = {
+  backgroundColor: '#606f7b',
+  border: 'solid 1px #606f7b',
+  color: 'white',
+  ':hover': {
+    backgroundColor: '#777f7b',
+    borderColor: '#777f7b',
+  },
+};
+const events = {
+  onClick: () => {
+    console.log('button onClick');
+  },
+  onFocus: () => {
+    console.log('button onFocus');
+  },
+};
+
+export default (
+  <Button styles={styles} events={events}>
+    click Me ⭐️
+  </Button>
+);
 ```
 
 ```jsx
 {
   /* Button link */
 }
-<Button
-  label="Click me"
-  actionClick={() => {
-    console.log('Hello world');
-  }}
-  type="link"
-/>;
-```
+import React from 'react';
+import Button from '@bit/devrchancay.esco.atoms.button';
+const styles = {
+  backgroundColor: 'transparent',
+  border: 'none',
+  ':hover': {
+    textDecoration: 'underline',
+  },
+};
+const events = {
+  onClick: () => {
+    console.log('button onClick');
+  },
+  onFocus: () => {
+    console.log('button onFocus');
+  },
+};
 
-```jsx
-{
-  /* Button with theme */
-}
-<Button
-  label="Click me"
-  actionClick={() => {
-    console.log('Hello world');
-  }}
-  color="secondary"
-/>;
+export default (
+  <Button styles={styles} events={events}>
+    click Me ⭐️
+  </Button>
+);
 ```
