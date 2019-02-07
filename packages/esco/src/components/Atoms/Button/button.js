@@ -10,37 +10,44 @@ import { simpleBtn } from './styles';
  * @example
  * import React from 'react';
  * import Button from '@bit/devrchancay.esco.atoms.button';
+ * const styles = {
+ *    backgroundColor: '#606f7b',
+ *    border: 'solid 1px #606f7b',
+ *    color: 'white',
+ *    ':hover': {
+ *        backgroundColor: '#777f7b',
+ *        borderColor: '#777f7b',
+ *    }
+ *  };
+ * const events = {
+ *  onClick: () => { console.log('button onClick')},
+ *  onFocus: () => { console.log('button onFocus')},
+ * }
  *
  * export default (
- *  <Button
- *    label="click Me"
- *    actionClick={() => { console.log('Hello world') }}
- *  />
+ *  <Button styles={styles} events={events}>click Me ⭐️</Button>
  * )
  *
  */
 
-const Button = ({ label, actionClick, type }) => (
-  <FelaComponent style={simpleBtn} type={type}>
+const Button = ({ events, styles, children }) => (
+  <FelaComponent style={simpleBtn} styles={styles}>
     {({ className }) => (
-      <button esco-type="atom" className={className} onClick={actionClick}>
-        {label}
+      <button esco-type="atom" className={className} {...events}>
+        {children}
       </button>
     )}
   </FelaComponent>
 );
 
 Button.propTypes = {
-  label: PropTypes.string.isRequired,
-  actionClick: PropTypes.func.isRequired,
-  type: PropTypes.string,
-  color: PropTypes.string,
+  events: PropTypes.object,
+  styles: PropTypes.styles,
 };
 
 Button.defaultProps = {
-  actionClick: () => {},
-  type: 'button',
-  color: 'primary',
+  events: {},
+  children: null,
 };
 
 export default Button;
