@@ -7,11 +7,25 @@ example
 Facebook Icon
 
 ```jsx
-<Icon icon={{ name: 'facebook', alt: 'follow me' }} />
+import React from 'react';
+import Icon from '@bit/devrchancay.esco.atoms.icon';
+
+export default (
+  <div style={{ width: '100px' }}>
+    <Icon icon={{ name: 'facebook', alt: 'follow me' }} />
+  </div>
+);
 ```
 
 Custom Icon
 
 ```jsx
-<Icon icon={{src: "https://codedebug.co/static/logo-credits.a68e7e7f.pngTwitter", alt="follow me"}}/>
+import React from 'react';
+import Icon from '@bit/devrchancay.esco.atoms.icon';
+
+export default (
+  <div style={{ width: '100px' }}>
+    <Icon icon={{src: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gatsby.svg", alt="follow me"}}/>
+  </div>
+);
 ```
