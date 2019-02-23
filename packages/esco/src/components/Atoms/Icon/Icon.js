@@ -9,14 +9,14 @@ import { getIcon } from './defaultIcons';
  * @name Icon
  * @description Simple Icon with src or default value.
  * @example
-    import React from 'react';
-    import Icon from '@bit/devrchancay.esco.atoms.icon';
-    
-    export default ( 
-      <div style={{ width: '100px' }} >
-        <Icon icon={{ name: 'facebook', alt: 'follow me' }} />
-      </div>
-    );
+ *   import React from 'react';
+ *   import Icon from '@bit/devrchancay.esco.atoms.icon';
+ *
+ *   export default (
+ *     <div style={{ width: '100px' }} >
+ *       <Icon icon={{ name: 'facebook', alt: 'follow me' }} />
+ *     </div>
+ *   );
  */
 
 const Icon = ({ icon, Component }) => (
