@@ -10,6 +10,6 @@
     "esco:build-storybook": "lerna run build-storybook --scope=esco"
   },
   "devDependencies": {
-    "lerna": "^3.4.3"
+    "lerna": "^3.13.4"
   }
 }
