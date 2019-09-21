@@ -8,7 +8,8 @@
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-fela": "^10.3.0",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "snyk": "^1.217.3"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^4.1.18",
@@ -37,7 +38,9 @@
     "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,5 +50,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
