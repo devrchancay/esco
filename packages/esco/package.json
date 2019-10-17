@@ -9,7 +9,7 @@
     "react-dom": "^16.8.1",
     "react-fela": "^10.3.0",
     "react-scripts": "3.0.0",
-    "snyk": "^1.217.3"
+    "snyk": "^1.235.1"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^4.1.18",
